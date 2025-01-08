@@ -14,11 +14,12 @@
         }
 
         header {
-            background-color: #1a1a1a;
+            background-color: #000;
             color: #fff;
             text-align: center;
             padding: 2rem 1rem;
             font-size: 2.5rem;
+            border-bottom: 5px solid #ffcc00;
         }
 
         .content {
@@ -32,13 +33,19 @@
             padding: 1.5rem;
             background: #fff;
             border: 1px solid #ccc;
+            border-left: 10px solid #000;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .fact-section:hover {
+            transform: scale(1.02);
         }
 
         .fact-section h2 {
             margin-top: 0;
-            color: #1a1a1a;
+            color: #000;
         }
 
         .fact-section p {
@@ -47,17 +54,25 @@
         }
 
         footer {
-            background-color: #1a1a1a;
+            background-color: #000;
             color: #fff;
             text-align: center;
             padding: 1rem;
+            border-top: 5px solid #ffcc00;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
+
+        .flag-bar {
+            display: flex;
+            height: 10px;
+            background: linear-gradient(to right, #000 33.33%, #ff0000 33.33%, #ff0000 66.66%, #ffcc00 66.66%);
+        }
     </style>
 </head>
 <body>
+    <div class="flag-bar"></div>
     <header>
         Facts About German Cinema
     </header>
